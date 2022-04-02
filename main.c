@@ -1,8 +1,18 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]){
+    int i;
 
-  printf("Hi mom im using git!!");
+    printf("Hi mom im using git!!\n");
+
+    printf(
+        "argc: %d\n", 
+        argc
+    );
+
+    for(i = 0; i<argc; i++){
+        printf("%s\n", argv[i]);
+    }
   
-  return 0;
+    return 0;
 }
